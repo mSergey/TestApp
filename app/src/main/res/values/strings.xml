@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Test Pizza</string>
+    <string name="menu">Меню</string>
+    <string name="profile">Профиль</string>
+    <string name="bin">Корзина</string>
+    <string name="price">от 325 р.</string>
+    <string name="city">Москва</string>
+</resources>

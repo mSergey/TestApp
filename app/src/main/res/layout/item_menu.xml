@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="167dp">
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_pizza"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/pizza_image"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_black"
+        android:maxLines="2"
+        android:textColor="#222831"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_pizza"
+        app:layout_constraintTop_toTopOf="@+id/image_view_pizza"
+        tools:text="Ветчина и грибы" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/sf_ui_display_regular"
+        android:maxLines="3"
+        android:textColor="#AAAAAD"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/text_view_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_name"
+        tools:text="Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/price_bound_iv"
+        android:layout_width="87dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/price_bound"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_price"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/price"
+        android:gravity="center"
+        android:fontFamily="@font/sf_ui_display_regular"
+        android:textSize="13sp"
+        android:textColor="#FD3A69"
+        app:layout_constraintBottom_toBottomOf="@+id/price_bound_iv"
+        app:layout_constraintEnd_toEndOf="@+id/price_bound_iv"
+        app:layout_constraintStart_toStartOf="@+id/price_bound_iv"
+        app:layout_constraintTop_toTopOf="@+id/price_bound_iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
